@@ -1,4 +1,4 @@
-/*let moment = require('moment-timezone')
+﻿let moment = require('moment-timezone')
 let handler = m => m
 
 handler.before = async function (m) {

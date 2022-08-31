@@ -1,7 +1,7 @@
-let fs = require('fs')                    //CREATOR = ikals,ikalsbot
+﻿let fs = require('fs')                    //CREATOR = ikals,ikalsbot
 let chalk = require('chalk')
 global.owner = [
-  ['6285172207018'],
+  ['6285173229118'],
   ['6285173229118'],
   ['6285173229118', 'ikals', true]  
   
@@ -10,7 +10,7 @@ global.ownername = [['ikals']]
 global.namabot = [['IkalsBot']]
 global.ownerinsta = [['@myptra69']]
 global.mods = [] 
-global.prems = [['6285172207018']] 
+global.prems = [['6285173229118']] 
 
 global.APIs = { // API Prefix
   // name: 'https://website'
@@ -44,7 +44,7 @@ const spack = fs.readFileSync("lib/exif.json")
 const stickerpack = JSON.parse(spack)
 if (stickerpack.spackname == '') {
   var sticker_name = 'ikalsbot'
-  var sticker_author = 'By ikals'
+  var sticker_author = 'ikalsbot'
 } else {
   var sticker_name = stickerpack.spackname
   var sticker_author = stickerpack.sauthor
@@ -59,9 +59,9 @@ fs.watchFile(file_exif, () => {
 })
 
 // Sticker WM
-global.packname = 'created'
+global.packname = 'Syicker by'
 global.author = ' ikals '
-global.wm = 'Created by ikals'
+global.wm = 'IkalsBot'
 
 global.multiplier = 1000 // The higher, The harder levelup
 

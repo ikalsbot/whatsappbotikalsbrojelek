@@ -1,6 +1,6 @@
 
 let handler = async(m, { conn, text, usedPrefix }) => {
-let [number, pesan] = text.split `|`
+let [number, pesan] = text.split ` `
 
     if (!number) return conn.reply(m.chat, 'Silahkan masukan nomor yang akan dikirim', m)
     if (!pesan) return conn.reply(m.chat, 'Silahkan masukan pesannya', m)
@@ -10,7 +10,7 @@ let [number, pesan] = text.split `|`
 
     let korban = `${number}`
     var nomor = m.sender
-    let spam1 = `*[ANDA MENERIMA PESAN ANONYM]*\nPesan : ${pesan}\n\n`
+    let spam1 = `*[ANDA MENERIMA PESAN DARI SESEORANG]*\nPesan : ${pesan}\n\n#PesanAnonym`
 
     conn.reply(korban + '@s.whatsapp.net', spam1, m)
 
@@ -18,6 +18,8 @@ let [number, pesan] = text.split `|`
     conn.reply(m.chat, logs, m)
 }
 handler.command = /^(pesan)$/i
+handler.help = ['pesan (no tujuan)|(pesan)']
+handler.tags = ['internet']
 handler.rowner = false
 handler.limit = true
 handler.premium = false

@@ -1,4 +1,4 @@
-require('./config')
+﻿require('./config')
 const {
   useSingleFileAuthState,
   makeInMemoryStore,
@@ -131,7 +131,7 @@ async function connectionUpdate(update) {
   }
   if (global.db.data == null) await loadDatabase()
   console.log(JSON.stringify(update, null, 4))
-  if (update.receivedPendingNotifications) conn.sendMessage(`6285172207018@s.whatsapp.net`, {text: 'IKALS BOT SUDAH ONLINE' })
+  if (update.receivedPendingNotifications) conn.sendMessage(`6285173229118@s.whatsapp.net`, {text: 'IKALS BOT SUDAH ONLINE' })
 }
 
 
